@@ -6,3 +6,57 @@
     width: 100vw;
     height: 100vh;
 }
+.mainCol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.counterClass{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #B24242;
+    width: 180px;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.counerElemin{
+    display: flex;
+    flex-direction: row;
+    width: 60px;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+}
+.counerElenum{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #B24242;
+    width: 60px;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FBE8E8;
+}
+.counerEleplus{
+    display: flex;
+    flex-direction: row;
+    width: 60px;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    background-color: #B24242;
+}
+.counterVal{
+
+}
+.plus{
+    color: white;
+    font-size: 21px;
+}
+.minus{
+    color: #B24242;
+    font-size: 21px;
+}
