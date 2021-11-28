@@ -33,6 +33,7 @@
     height: 56px;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .counerElenum{
     display: flex;
@@ -54,6 +55,7 @@
     background-color: #B24242;
     border-bottom-right-radius: 3px;
     border-top-right-radius: 3px;
+    cursor: pointer;
 }
 .plus{
     color: white;

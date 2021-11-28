@@ -1,4 +1,4 @@
-import React, {useState, useEffect, Component} from 'react';
+import React, {Component} from 'react';
 import './Main.css';
 import axios from 'axios';
 import Loader from './Loader/Loader';
