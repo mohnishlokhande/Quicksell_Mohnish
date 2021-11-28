@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Quicksell_Mohnish/static/css/main.7d1cc62e.chunk.css",
-    "main.js": "/Quicksell_Mohnish/static/js/main.1e54442c.chunk.js",
-    "main.js.map": "/Quicksell_Mohnish/static/js/main.1e54442c.chunk.js.map",
+    "main.css": "/Quicksell_Mohnish/static/css/main.f91e2bad.chunk.css",
+    "main.js": "/Quicksell_Mohnish/static/js/main.b145272d.chunk.js",
+    "main.js.map": "/Quicksell_Mohnish/static/js/main.b145272d.chunk.js.map",
     "runtime-main.js": "/Quicksell_Mohnish/static/js/runtime-main.a8da35a5.js",
     "runtime-main.js.map": "/Quicksell_Mohnish/static/js/runtime-main.a8da35a5.js.map",
     "static/js/2.26d8e799.chunk.js": "/Quicksell_Mohnish/static/js/2.26d8e799.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.5cd3bac2.chunk.js": "/Quicksell_Mohnish/static/js/3.5cd3bac2.chunk.js",
     "static/js/3.5cd3bac2.chunk.js.map": "/Quicksell_Mohnish/static/js/3.5cd3bac2.chunk.js.map",
     "index.html": "/Quicksell_Mohnish/index.html",
-    "static/css/main.7d1cc62e.chunk.css.map": "/Quicksell_Mohnish/static/css/main.7d1cc62e.chunk.css.map",
+    "static/css/main.f91e2bad.chunk.css.map": "/Quicksell_Mohnish/static/css/main.f91e2bad.chunk.css.map",
     "static/js/2.26d8e799.chunk.js.LICENSE.txt": "/Quicksell_Mohnish/static/js/2.26d8e799.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/Quicksell_Mohnish/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.a8da35a5.js",
     "static/js/2.26d8e799.chunk.js",
-    "static/css/main.7d1cc62e.chunk.css",
-    "static/js/main.1e54442c.chunk.js"
+    "static/css/main.f91e2bad.chunk.css",
+    "static/js/main.b145272d.chunk.js"
   ]
 }
