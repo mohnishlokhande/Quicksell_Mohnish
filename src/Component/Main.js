@@ -83,6 +83,7 @@ class Main extends Component {
                             value={this.state.counter}
                             onChange={this.onChange}
                             className="inputC"
+                            style={{fontWeight:"bold", color:"#b24242"}}
                             />
                             {/* <p>{this.state.counter}</p> */}
                         </div>
