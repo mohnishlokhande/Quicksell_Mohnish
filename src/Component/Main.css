@@ -19,7 +19,7 @@
 .counterClass{
     display: flex;
     flex-direction: row;
-    border: 1px solid #B24242;
+    border: 2px solid #B24242;
     width: 180px;
     height: 56px;
     justify-content: center;
@@ -37,7 +37,7 @@
 .counerElenum{
     display: flex;
     flex-direction: row;
-    border: 1px solid #B24242;
+    border: 2px solid #B24242;
     width: 60px;
     height: 56px;
     justify-content: center;
@@ -59,10 +59,12 @@
 .plus{
     color: white;
     font-size: 21px;
+    font-weight: 900;
 }
 .minus{
     color: #B24242;
     font-size: 21px;
+    font-weight: 900;
 }
 .counterVal{
     display: flex;
@@ -79,5 +81,10 @@
     font-weight: 500;
 }
 .inputC{
-    width: 60px !important;
+    width: 55px !important;
+    height: 55px;
+    border: 2px solid #B24242 !important;
+    /* border: none !important; */
+    text-align: center !important;
+    background-color: #FBE8E8 !important;
 }
