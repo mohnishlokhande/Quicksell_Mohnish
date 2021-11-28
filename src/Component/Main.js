@@ -1,14 +1,14 @@
-import React, {Component,useState} from 'react';
+import React, {useState} from 'react';
 import './Main.css';
+import axios from 'axios';
 
 
 const Main = () => {
-    const [counter, setCounter] = useState(0)
+    const [counter, setCounter] = useState(1)
     
     const handleClick1 = () => {
         setCounter(counter + 1)
     }
-    
     const handleClick2 = () => {
         setCounter(counter - 1)
     }
@@ -19,12 +19,12 @@ const Main = () => {
                 <div className="saveC">
                     <p>Saving counter value</p>
                 </div>
-                <div className="counterClass"  onClick={handleClick2}>
-                    <div className="counerElemin">
+                <div className="counterClass" >
+                    <div className="counerElemin" onClick={handleClick2}>
                         <h className="minus">-</h>
                     </div>
                     <div className="counerElenum">
-                        <p>10</p>
+                        <p>{counter}</p>
                     </div>
                     <div className="counerEleplus" onClick={handleClick1}>
                         <h className="plus">+</h>
@@ -36,8 +36,6 @@ const Main = () => {
             </div>
         </div>
     );
-    
-
 }
 
 export default Main;
