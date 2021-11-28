@@ -53,6 +53,8 @@
     align-items: center;
     background-color: #B24242;
     /* border-radius: 8px; */
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
 }
 .plus{
     color: white;
