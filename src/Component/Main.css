@@ -11,6 +11,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 257px;
+    height: 130px;
+    background-color: #FFFFFF;
+    box-shadow: 5px 10px;
 }
 .counterClass{
     display: flex;
@@ -49,9 +53,6 @@
     align-items: center;
     background-color: #B24242;
 }
-.counterVal{
-
-}
 .plus{
     color: white;
     font-size: 21px;
@@ -59,4 +60,18 @@
 .minus{
     color: #B24242;
     font-size: 21px;
+}
+.counterVal{
+    display: flex;
+    flex-direction: row;
+    width: 180px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.saveC{
+    display: flex;
+    flex-direction: row;
+    width: 180px;
+    font-size: 12px;
+    font-weight: 500;
 }

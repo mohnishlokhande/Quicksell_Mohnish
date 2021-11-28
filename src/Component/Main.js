@@ -6,8 +6,8 @@ class Main extends Component {
     render(){
         return(
             <div className="mainContainer">
-                <div className="mainCol" >
-                    <div>
+                <div className="mainCol">
+                    <div className="saveC">
                         <p>Saving counter value</p>
                     </div>
                     <div className="counterClass">
@@ -22,10 +22,9 @@ class Main extends Component {
                         </div>
                     </div>
                     <div className="counterVal">
-                            <p>Counter values : 10</p>
+                        <p>Counter values : 10</p>
                     </div>
                 </div>
-                {/* <h1>hello </h1> */}
             </div>
         );
     }
