@@ -14,7 +14,7 @@
     width: 257px;
     height: 130px;
     background-color: #FFFFFF;
-    box-shadow: 5px 10px;
+    /* box-shadow: 5px 10px; */
 }
 .counterClass{
     display: flex;
