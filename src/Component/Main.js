@@ -9,10 +9,11 @@ class Main extends Component {
     constructor() {
         super();
         this.state = {
-           counter: 1
+           counter: 1,
+           loading:false
         }
     }
-    
+
     componentDidMount(){
         axios.get('https://interview-8e4c5-default-rtdb.firebaseio.com/front-end/counter1.json')
           .then((response) => {
@@ -31,17 +32,40 @@ class Main extends Component {
           }) 
     }
     handleClick1 = () => {
-        this.setState({counter: this.state.counter+1});
+        var x=Number(this.state.counter);
+        this.setState({counter: x +1});
+      //  if(this)
+        this.setState({loading:true});
+        axios.put('https://interview-8e4c5-default-rtdb.firebaseio.com/front-end.json', { mohnish: this.state.counter })
+        .then((response) => {
+        console.log(response);
+        this.setState({loading:false});
+        })
     }
     handleClick2 = () => {
-        this.setState({counter: this.state.counter-1});
+        var x=Number(this.state.counter);
+        this.setState({counter: x-1});
+        this.setState({loading:true});
+        axios.put('https://interview-8e4c5-default-rtdb.firebaseio.com/front-end.json', { mohnish: this.state.counter })
+        .then((response) => {
+        console.log(response);
+        this.setState({loading:false});
+        })
     }
+
+    onChange = (e) => {
+        const name = e.target.name;
+        const value = e.target.value;
+        this.setState({ [name]: value });
+    }
+    
 
     render(){
         return(
             <div className="mainContainer">
                 <div className="mainCol">
                     <div className="saveC">
+                        {this.state.loading? <Loader/> :null}
                         {/* <Loader/> */}
                         <p>Saving counter value</p>
                     </div>
@@ -50,7 +74,14 @@ class Main extends Component {
                             <h className="minus">-</h>
                         </div>
                         <div className="counerElenum">
-                            <p>{this.state.counter}</p>
+                        <input
+                            type="text"
+                            name="counter"
+                            value={this.state.counter}
+                            onChange={this.onChange}
+                            className="inputC"
+                            />
+                            {/* <p>{this.state.counter}</p> */}
                         </div>
                         <div className="counerEleplus" onClick={this.handleClick1}>
                             <h className="plus">+</h>
@@ -66,36 +97,5 @@ class Main extends Component {
 
 }
 
-// const Main = () => {
-//     const [counter, setCounter] = useState(1);
-//     useEffect(() => {
-//         axios.get('https://interview-8e4c5-default-rtdb.firebaseio.com/front-end/counter1.json')
-//           .then(function (response) {
-//             // handle success
-//             if(response.data == null) {
-//                 setCounter(1);
-//             }
-//             else {
-//                 console.log(response.data);
-//                 setCounter(response.data);
-//             }
-//           })
-//           .catch(function (error) {
-//             console.log(error);
-//           })  
-//         },[]);
-    
-    
-    // const handleClick1 = () => {
-    //     setCounter(counter + 1)
-    // }
-    // const handleClick2 = () => {
-    //     setCounter(counter - 1)
-    // }
-
-//     return(
-        
-//     );
-// }
 
 export default Main;
