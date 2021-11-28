@@ -65,8 +65,11 @@ class Main extends Component {
             <div className="mainContainer">
                 <div className="mainCol">
                     <div className="saveC">
-                        {this.state.loading? <Loader/> :null}
+                        <div className="loadC">
+                            {this.state.loading? <Loader/> :null}
+                        </div>
                         {/* <Loader/> */}
+                        &nbsp;&nbsp;
                         <p>Saving counter value</p>
                     </div>
                     <div className="counterClass" >

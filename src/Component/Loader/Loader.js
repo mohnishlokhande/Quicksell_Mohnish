@@ -5,12 +5,13 @@ class Loader extends Component {
     render(){
         return(
             <div>
-                <div class="lds-roller"><div></div>
+                {/* <div class="lds-roller"><div></div>
                 <div></div>
                 <div></div>
                 <div></div><div></div>
                 <div></div><div></div>
-                <div></div></div>
+                <div></div></div> */}
+                <div class="spinner-4"></div>
             </div>
         );
     }
